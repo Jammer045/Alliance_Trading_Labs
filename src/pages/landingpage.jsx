@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { CheckCircle, TrendingUp, Clock, Users } from 'lucide-react';
 import BackgoundImage from '../assets/banner.png';
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
   const features = [
     {
       icon: <TrendingUp className="w-8 h-8 text-blue-600" />,
@@ -46,7 +49,7 @@ const LandingPage = () => {
       price: "499 USD",
       features: [
         "Acceso ilimitado",
-        "Sesiones de mentoría ilimitadas",
+        "Sesiones de mentoría ilimitadas", 
         "Material completo de Forex",
         "Soporte prioritario",
         "Acceso a herramientas avanzadas",
@@ -60,7 +63,7 @@ const LandingPage = () => {
 
   const sp500Packages = [
     {
-      title: "SP500 Visitante",
+      title: "SP500 Visitante", 
       price: "50",
       features: [
         "Acceso restringido por 1 mes",
@@ -70,7 +73,7 @@ const LandingPage = () => {
     },
     {
       title: "SP500 Básico",
-      price: "299",
+      price: "299", 
       features: [
         "Acceso ilimitado por 1 año",
         "Acceso a material básico de SP500",
@@ -127,11 +130,14 @@ const LandingPage = () => {
                   </li>
                 ))}
               </ul>
-              <button className={`w-full mt-6 px-6 py-3 rounded-lg transition-colors ${
-                pkg.title.includes("Premium")
-                  ? "bg-blue-600 text-white hover:bg-blue-700"
-                  : "bg-gray-100 text-gray-800 hover:bg-gray-200"
-              }`}>
+              <button 
+                onClick={() => navigate('/contact')}
+                className={`w-full mt-6 px-6 py-3 rounded-lg transition-colors ${
+                  pkg.title.includes("Premium")
+                    ? "bg-blue-600 text-white hover:bg-blue-700"
+                    : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                }`}
+              >
                 Seleccionar Plan
               </button>
             </div>
