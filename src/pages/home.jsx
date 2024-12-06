@@ -5,15 +5,15 @@ import BackgroundImage from '../assets/banner.png';
 import Imagen1 from '../assets/analisis_tecnico.jpeg';
 import Imagen2 from '../assets/gestion_riesgo.png';
 import Imagen3 from '../assets/psico_trading.png';
-import Imagen4 from '../assets/mercado_forex.jpg';
+import Imagen4 from '../assets/Forex.png';
 import Imagen5 from '../assets/SP500.jpg';
 import Imagen6 from '../assets/mentoria.jpeg';
 import Imagen7 from '../assets/indicadores-trading-main.jpg';
-import Imagen8 from '../assets/logo-ninjatrader.png';
+import Imagen8 from '../assets/FUTUROS.png';
 import Imagen9 from '../assets/metodologia_profesional.jpg';
 import Imagen10 from '../assets/finanzas-bursatiles.jpg';
 import Imagen11 from '../assets/BUWBAOAXXNEOLIV6DLE6IFA6GY.jpg';
-import Imagen12 from '../assets/sat_x2x.jpg_377584923.jpg';
+import Imagen12 from '../assets/3-transparencia-y-confianza.jpg';
 
 const Home = () => {
   const navigate = useNavigate();
