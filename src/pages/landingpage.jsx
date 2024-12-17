@@ -26,11 +26,12 @@ const LandingPage = () => {
 
   const forexPackages = [
     {
-      title: "Forex Visitante",
+      title: "Introduccion al Forex",
       price: "50",
       features: [
-        "Acceso restringido por 1 mes",
+        "Acceso unicamente a 1 modulo",
         "Acceso a material básico de Forex",
+        "Introduccion a la cartografia del mercado",
         "Explicacion de conceptos básicos"
       ]
     },
@@ -40,6 +41,8 @@ const LandingPage = () => {
       features: [
         "Acceso ilimitado por 1 año",
         "Acceso a material básico de Forex",
+        "Acceso a nuestra estrategia",
+        "Fundamentos Avanzados",
         "Soporte por email",
         "Retroalimentación de tus trades"
       ]
@@ -52,7 +55,7 @@ const LandingPage = () => {
         "Sesiones de mentoría ilimitadas", 
         "Material completo de Forex",
         "Soporte prioritario",
-        "Acceso a herramientas avanzadas",
+        "Acceso a herramientas avanzadas (IA, bots, etc.)",
         "Explicaciones detalladas de las estrategias",
         "Revisión detallada de tus trades",
         "Análisis de todos los pares",
@@ -63,11 +66,12 @@ const LandingPage = () => {
 
   const sp500Packages = [
     {
-      title: "SP500 Visitante", 
+      title: "Introduccion al SP500", 
       price: "50",
       features: [
-        "Acceso restringido por 1 mes",
+        "Acceso unicamente a 1 modulo",
         "Acceso a material básico de SP500",
+        "Introduccion a la cartografia del mercado",
         "Explicacion de conceptos básicos"
       ]
     },
@@ -77,6 +81,8 @@ const LandingPage = () => {
       features: [
         "Acceso ilimitado por 1 año",
         "Acceso a material básico de SP500",
+        "Acceso a nuestra estrategia",
+        "Fundamentos Avanzados",
         "Soporte por email",
         "Retroalimentación de tus trades"
       ]
@@ -89,7 +95,7 @@ const LandingPage = () => {
         "Sesiones de mentoría ilimitadas",
         "Material completo de SP500",
         "Soporte prioritario",
-        "Acceso a herramientas avanzadas",
+        "Acceso a herramientas avanzadas (IA, bots, etc.)",
         "Explicaciones detalladas de las estrategias",
         "Revisión detallada de tus trades",
         "Análisis profundo del mercado",
@@ -118,7 +124,7 @@ const LandingPage = () => {
                 <h3 className="text-2xl font-bold">{pkg.title}</h3>
                 <div className="mt-4">
                   <span className="text-4xl font-bold">${pkg.price}</span>
-                  {pkg.title.includes("Visitante") && <span className="text-gray-600">usd/mes</span>}
+                  {pkg.title.includes("Introduccion") && <span className="text-gray-600">usd/mes</span>}
                   {pkg.title.includes("Básico") && <span className="text-gray-600">usd/año</span>}
                 </div>
               </div>
