@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import AboutUs from './pages/aboutUs';
 import LandingPage from './pages/landingpage.jsx';
 import TradingTracker from './pages/trackingpage.jsx';
+import NotFound from './pages/notFound.jsx';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/tracker" element={<TradingTracker />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
       </Router>
