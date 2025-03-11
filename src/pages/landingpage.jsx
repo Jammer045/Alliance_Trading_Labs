@@ -104,6 +104,46 @@ const LandingPage = () => {
     }
   ];
 
+  const bitcoinPackages = [
+    {
+      title: "Introducción al Bitcoin",
+      price: "50",
+      features: [
+        "Acceso únicamente a 1 módulo",
+        "Acceso a material básico de Bitcoin",
+        "Introducción a la tecnología blockchain",
+        "Explicación de conceptos básicos"
+      ]
+    },
+    {
+      title: "Bitcoin Básico",
+      price: "299",
+      features: [
+        "Acceso ilimitado por 1 año",
+        "Acceso a material básico de Bitcoin",
+        "Acceso a nuestra estrategia",
+        "Fundamentos avanzados de criptomonedas",
+        "Soporte por email",
+        "Retroalimentación de tus trades"
+      ]
+    },
+    {
+      title: "Bitcoin Premium",
+      price: "499 USD",
+      features: [
+        "Acceso ilimitado",
+        "Sesiones de mentoría ilimitadas",
+        "Material completo de Bitcoin",
+        "Soporte prioritario",
+        "Acceso a herramientas avanzadas (IA, bots, etc.)",
+        "Explicaciones detalladas de las estrategias",
+        "Revisión detallada de tus trades",
+        "Análisis profundo del mercado de criptomonedas",
+        "Devolución del 10% al finalizar el curso"
+      ]
+    }
+  ];
+
   const PricingSection = ({ title, packages }) => (
     <div className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -201,6 +241,7 @@ const LandingPage = () => {
       {/* Pricing Sections */}
       <PricingSection title="Planes de Mentoría Forex" packages={forexPackages} />
       <PricingSection title="Planes de Mentoría SP500" packages={sp500Packages} />
+      <PricingSection title="Planes de Mentoría Bitcoin" packages={bitcoinPackages} />
     </div>
   );
 };
