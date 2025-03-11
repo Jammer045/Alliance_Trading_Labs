@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -11,6 +10,7 @@ const Navbar = () => {
     { label: 'Productos', path: '/landing' },
     { label: 'Forex', path: '/forex' },
     { label: 'SP500', path: '/sp500' },
+    { label: 'Bitcoin', path: '/bitcoin' },
     { label: 'Estadisticas', path: '/tracker' },
     { label: 'Sobre Nosotros', path: '/about' },
     { label: 'Contacto', path: '/contact' }
