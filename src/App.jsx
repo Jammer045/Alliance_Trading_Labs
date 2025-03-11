@@ -11,6 +11,7 @@ import AboutUs from './pages/aboutUs';
 import LandingPage from './pages/landingpage.jsx';
 import TradingTracker from './pages/trackingpage.jsx';
 import NotFound from './pages/notFound.jsx';
+import BitcoinCourse from './pages/bitcoinPage.jsx';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/landing" element={<LandingPage />} />
             <Route path="/forex" element={<Forex />} />
             <Route path="/sp500" element={<SP500 />} />
+            <Route path="/bitcoin" element={<BitcoinCourse />} />
             <Route path="/tracker" element={<TradingTracker />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<AboutUs />} />
