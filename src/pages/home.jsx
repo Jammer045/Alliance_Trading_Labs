@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import BackgroundImage from '../assets/banner.png';
 import Imagen1 from '../assets/analisis_tecnico.jpeg';
-import Imagen2 from '../assets/gestion_riesgo.png';
+import Imagen2 from '../assets/Moneda_bitcoin.png';
 import Imagen3 from '../assets/psico_trading.png';
 import Imagen4 from '../assets/Forex.png';
 import Imagen5 from '../assets/SP500.jpg';
@@ -28,8 +28,8 @@ const Home = () => {
     },
     {
       id: 2,
-      title: "Gestión de Riesgo",
-      description: "Protege tu capital con estrategias efectivas",
+      title: "Criptomonedas",
+      description: "Descubre el mundo del bitcoin y las criptomonedas",
       image: Imagen2
     },
     {
